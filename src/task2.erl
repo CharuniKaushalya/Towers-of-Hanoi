@@ -25,7 +25,7 @@ display_towers(Game) ->
 			{Key, Result} -> io:format("~p: ~w~n", [Key, Result])
 		end, 
 	Cnt+1 end, 1, Game),
-	 io:format("................................. ~n")
+	 io:format("................................. ~n").
 
 move(Game,From,To) ->
 	{Key, Result} =  lists:keyfind(From, 1, Game),
